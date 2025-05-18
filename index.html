@@ -1,26 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Service Haus und Garten</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body {<!-- WhatsApp Button -->
-<a href="https://wa.me/4915901350188" target="_blank" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  font-size: 16px;
-  z-index: 1000;">
-  WhatsApp schreiben
-</a>
+    body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -48,15 +35,43 @@
     }
     main {
       padding: 30px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       background-color: white;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-radius: 8px;
     }
     ul {
-      padding-left: 20px;
-      line-height: 1.8;
+      padding-left: 0;
+      list-style: none;
+    }
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    li i {
+      color: #2e7d32;
+      min-width: 20px;
+    }
+    .contact, .preise {
+      margin-top: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    table th {
+      background-color: #2e7d32;
+      color: white;
     }
     footer {
       text-align: center;
@@ -64,9 +79,6 @@
       background-color: #eee;
       margin-top: 40px;
       font-size: 14px;
-    }
-    .contact {
-      margin-top: 20px;
     }
     @media (max-width: 600px) {
       header {
@@ -88,27 +100,74 @@
   <main>
     <h2>Unsere Dienstleistungen:</h2>
     <ul>
-      <li>Hausmeistertätigkeiten</li>
-      <li>Gebäudereinigung</li>
-      <li>Steinreinigung</li>
-      <li>Hofreinigung</li>
-      <li>Treppenhausreinigung</li>
-      <li>Laubbeseitigung</li>
-      <li>Winterdienst</li>
-      <li>Gartenpflege</li>
+      <li><i class="fas fa-broom"></i> Gebäudereinigung</li>
+      <li><i class="fas fa-leaf"></i> Gartenpflege</li>
+      <li><i class="fas fa-tree"></i> Laubbeseitigung</li>
+      <li><i class="fas fa-stairs"></i> Treppenhausreinigung</li>
+      <li><i class="fas fa-road"></i> Hofreinigung</li>
+      <li><i class="fas fa-snowflake"></i> Winterdienst</li>
+      <li><i class="fas fa-tools"></i> Hausmeistertätigkeiten</li>
+      <li><i class="fas fa-brush"></i> Steinreinigung</li>
     </ul>
+
+    <div class="preise">
+      <h3>Preise & Angebote:</h3>
+      <table>
+        <tr>
+          <th>Leistung</th>
+          <th>Preis</th>
+        </tr>
+        <tr>
+          <td>Gartenpflege (pro Besuch)</td>
+          <td>ab 40 €</td>
+        </tr>
+        <tr>
+          <td>Treppenhausreinigung (monatlich)</td>
+          <td>ab 45 €</td>
+        </tr>
+        <tr>
+          <td>Winterdienst (pro Einsatz)</td>
+          <td>ab 25 €</td>
+        </tr>
+        <tr>
+          <td>Hausmeister-Service (Monatspaket)</td>
+          <td>ab 120 €</td>
+        </tr>
+        <tr>
+          <td>Gebäudereinigung (nach Absprache)</td>
+          <td>Individuell</td>
+        </tr>
+      </table>
+    </div>
 
     <div class="contact">
       <h3>Kontakt:</h3>
-      <p>Telefon / WhatsApp: <strong>0159 01350188</strong></p>
-      <p>Email: <strong>Servicehausundgarten1991@gmail.com</strong></p>
-      <p>Regionen: Bochum, Essen, Gelsenkirchen, Witten, Dortmund, Wattenscheid, Langendreer, Herne, Bottrop, Oberhausen, Duisburg</p>
+      <p><strong>Telefon / WhatsApp:</strong> <a href="https://wa.me/4915901350188" target="_blank">0159 01350188</a></p>
+      <p><strong>Email:</strong> Servicehausundgarten1991@gmail.com</p>
+      <p><strong>Regionen:</strong> Bochum, Essen, Gelsenkirchen, Witten, Dortmund, Wattenscheid, Langendreer, Herne, Bottrop, Oberhausen, Duisburg</p>
     </div>
   </main>
 
   <footer>
     &copy; 2025 Service Haus und Garten. Alle Rechte vorbehalten.
   </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/4915901350188" target="_blank" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    font-size: 16px;
+    z-index: 1000;">
+    WhatsApp schreiben
+  </a>
 
 </body>
 </html>
