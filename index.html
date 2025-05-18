@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Haus & Garten</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-green-700 text-white p-6 text-center">
+    <img src="logo.png" alt="Service Haus & Garten Logo" class="mx-auto w-32 mb-4">
+    <h1 class="text-3xl font-bold">Service Haus & Garten</h1>
+    <p class="text-lg mt-2">Hausmeisterservice & Gartenpflege in Ihrer Nähe</p>
+  </header>
+
+  <nav class="bg-green-600 text-white p-4 flex justify-center space-x-6">
+    <a href="#ueber" class="hover:underline">Über uns</a>
+    <a href="#leistungen" class="hover:underline">Leistungen</a>
+    <a href="#galerie" class="hover:underline">Galerie</a>
+    <a href="#kontakt" class="hover:underline">Kontakt</a>
+  </nav>
+
+  <section id="ueber" class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Über uns</h2>
+    <p>Wir bieten professionelle Dienstleistungen rund ums Haus und den Garten in Bochum, Essen, Gelsenkirchen, Witten, Dortmund, Wattenscheid, Langendreer, Herne, Bottrop, Oberhausen und Duisburg.</p>
+  </section>
+
+  <section id="leistungen" class="p-6 bg-white shadow-md mx-4 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">Unsere Leistungen</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Hausmeistertätigkeiten</li>
+      <li>Gebäudereinigung</li>
+      <li>Steinreinigung</li>
+      <li>Hofreinigung</li>
+      <li>Treppenhausreinigung</li>
+      <li>Laubbeseitigung</li>
+      <li>Winterdienst</li>
+      <li>Gartenpflege</li>
+    </ul>
+  </section>
+
+  <section id="galerie" class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Galerie</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="image1.jpg" alt="Bild 1" class="rounded-lg shadow">
+      <img src="image2.jpg" alt="Bild 2" class="rounded-lg shadow">
+      <img src="image3.jpg" alt="Bild 3" class="rounded-lg shadow">
+    </div>
+  </section>
+
+  <section id="kontakt" class="p-6 bg-white shadow-md mx-4 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-4">Kontakt</h2>
+    <p><strong>Telefon:</strong> 01590 1350188</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:Servicehausundgarten1991@gmail.com" class="text-green-700 hover:underline">Servicehausundgarten1991@gmail.com</a></p>
+
+    <form class="mt-4 space-y-4">
+      <input type="text" placeholder="Ihr Name" class="w-full p-2 border rounded">
+      <input type="email" placeholder="Ihre E-Mail" class="w-full p-2 border rounded">
+      <textarea placeholder="Ihre Nachricht" rows="4" class="w-full p-2 border rounded"></textarea>
+      <button type="submit" class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800">Absenden</button>
+    </form>
+  </section>
+
+  <footer class="bg-green-700 text-white text-center p-4 mt-8">
+    <p>&copy; 2025 Service Haus & Garten. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
