@@ -1,187 +1,48 @@
 
-<!DOCTYPE html>
-<html lang="de">
+<!DOCTYPE html><html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Service Haus und Garten</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Service Haus & Garten</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
       color: #333;
     }
     header {
       background-color: #2e7d32;
       color: white;
-      display: flex;
-      align-items: center;
       padding: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+      text-align: center;
     }
     header img {
-      width: 100px;
-      height: auto;
+      max-height: 60px;
     }
-    header h1 {
-      font-size: 24px;
-      margin: 0;
-      text-align: center;
-    }
-    main {
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-    ul {
-      padding-left: 0;
-      list-style: none;
-    }
-    li {
-      padding: 10px 0;
-      border-bottom: 1px solid #ddd;
+    .hero {
+      background: url('https://images.unsplash.com/photo-1601039641985-0093a7a18703') center/cover no-repeat;
+      height: 300px;
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 10px;
-    }
-    li i {
-      color: #2e7d32;
-      min-width: 20px;
-    }
-    .contact, .preise {
-      margin-top: 30px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-    }
-    table th, table td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;
-    }
-    table th {
-      background-color: #2e7d32;
       color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
-    footer {
+    .section {
+      padding: 40px 20px;
       text-align: center;
-      padding: 20px;
-      background-color: #eee;
-      margin-top: 40px;
-      font-size: 14px;
     }
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-      }
-      header h1 {
-        font-size: 20px;
-      }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
     }
-  </style>
-</head>
-<body>
-
-  <header>
-    <img src="logo.png" alt="Logo">
-    <h1>Service Haus und Garten<br><span style="font-size:16px;">Bochum & Umgebung</span></h1>
-  </header>
-
-  <main>
-    <h2>Unsere Dienstleistungen:</h2>
-    <ul>
-      <li><i class="fas fa-broom"></i> Gebäudereinigung</li>
-      <li><i class="fas fa-leaf"></i> Gartenpflege</li>
-      <li><i class="fas fa-tree"></i> Laubbeseitigung</li>
-      <li><i class="fas fa-stairs"></i> Treppenhausreinigung</li>
-      <li><i class="fas fa-road"></i> Hofreinigung</li>
-      <li><i class="fas fa-snowflake"></i> Winterdienst</li>
-      <li><i class="fas fa-tools"></i> Hausmeistertätigkeiten</li>
-      <li><i class="fas fa-brush"></i> Steinreinigung</li>
-    </ul>
-
-    
-<table>
-  <tr>
-    <th>Leistung</th>
-    <th>Preis</th>
-  </tr>
-  ...
-</table>
-  <!-- Sonderangebot -->
-  <div style="color: red; font-weight: bold; margin-top: 20px;">
-    Mindestauftragswert: 99€<br>
-    20% Frühbucherrabatt!<br>
-    <span style="font-weight: normal;">
-      • bis 15.07.25 auf deinen Herbst-Termin<br>
-      • gültig für Hecken- und Sträucherschnitte
-    </span>
-  </div>
-</div>
-      <h3>Preise & Angebote:</h3>
-      <table>
-        <tr>
-          <th>Leistung</th>
-          <th>Preis</th>
-        </tr>
-        <tr>
-          <td>Gartenpflege (pro Besuch)</td>
-          <td>ab 40 €</td>
-        </tr>
-        <tr>
-          <
-        </tr>
-        <tr>
-          <td>Winterdienst (pro Einsatz)</td>
-          <td>ab 25 €</td>
-        </tr>
-        <tr>
-          <td>Hausmeister-Service (Monatspaket)</td>
-          <td>ab 120 €</td>
-        </tr>
-        
-        </tr>
-      </table>
-    </div>
-
-    <div class="contact">
-      <h3>Kontakt:</h3>
-      <p><strong>Telefon / WhatsApp:</strong> <a href="https://wa.me/4915901350188" target="_blank">0159 01350188</a></p>
-      <p><strong>Email:</strong> Servicehausundgarten1991@gmail.com</p>
-      <p><strong>Regionen:</strong> Bochum, Essen, Gelsenkirchen, Witten, Dortmund, Wattenscheid, Langendreer, Herne, Bottrop, Oberhausen, Duisburg</p>
-    </div>
-  </main>
-
-  <footer>
-    &copy; 2025 Service Haus und Garten. Alle Rechte vorbehalten.
-  </footer>
-
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/4915901350188" target="_blank" style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    font-size: 16px;
-    z-index: 1000;">
-    WhatsApp schreiben
-  </a>
-
-</body>
-</html>
+    .service {
+      background: white
